@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 20px;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .project {
+            margin-bottom: 15px;
+        }
+        form input, form textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio</h1>
+        <p>Desarrollador Front-End</p>
+    </header>
+    
+    <section id="about">
+        <h2>Sobre Mí</h2>
+        <p>¡Hola! Soy un desarrollador Front-End apasionado por la tecnología y la creación de experiencias web interactivas.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="project">
+            <h3>Proyecto 1</h3>
+            <p>Descripción breve del proyecto.</p>
+        </div>
+        <div class="project">
+            <h3>Proyecto 2</h3>
+            <p>Descripción breve del proyecto.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Mensaje enviado correctamente');
+        });
+    </script>
+</body>
+</html>
