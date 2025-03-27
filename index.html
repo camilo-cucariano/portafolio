@@ -14,26 +14,79 @@
         h1 {
             color: #333;
         }
-        iframe {
-            width: 90%;
-            height: 500px;
-            border: 2px solid #ccc;
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .project {
             margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            background-color: #fafafa;
+        }
+        .project h2 {
+            margin: 0 0 10px;
+        }
+        .project p {
+            font-size: 14px;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            background: #007BFF;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <h1>Bienvenido a mis portafolios</h1>
 
-    <h2>Portafolio 1</h2>
-    <iframe src="proyecto1/" allowfullscreen></iframe>
+    <div class="container">
+        <h1>Bienvenido a mi Portafolio</h1>
+        <p>Explora mis proyectos y descubre lo que he desarrollado.</p>
 
-    <h2>Portafolio 2</h2>
-    <iframe src="proyecto2/" allowfullscreen></iframe>
+        <div class="project">
+            <h2>Portafolio 1</h2>
+            <p>Descripción breve del primer proyecto. Explica qué tecnologías usaste y qué funcionalidad tiene.</p>
+            <a class="btn" href="proyecto1/" target="_blank">Ver Proyecto Completo</a>
+            <iframe src="proyecto1/" allowfullscreen></iframe>
+        </div>
 
-    <h2>Portafolio 3</h2>
-    <iframe src="proyecto3/" allowfullscreen></iframe>
+        <div class="project">
+            <h2>Portafolio 2</h2>
+            <p>Descripción breve del segundo proyecto. ¿Qué retos resolviste? ¿Por qué es especial?</p>
+            <a class="btn" href="proyecto2/" target="_blank">Ver Proyecto Completo</a>
+            <iframe src="proyecto2/" allowfullscreen></iframe>
+        </div>
+
+        <div class="project">
+            <h2>Portafolio 3</h2>
+            <p>Descripción breve del tercer proyecto. ¿Cómo lo desarrollaste? ¿Qué aprendiste?</p>
+            <a class="btn" href="proyecto3/" target="_blank">Ver Proyecto Completo</a>
+            <iframe src="proyecto3/" allowfullscreen></iframe>
+        </div>
+    </div>
+
 </body>
 </html>
+
 
 
